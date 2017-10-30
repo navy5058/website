@@ -8,7 +8,7 @@ if ('serviceWorker' in navigator) {
 	var options = {
 	  body: 'Simple piece of body text.\nSecond line of body text :)'
 	};
-	registration.showNotification(title, options);   
+	reg.showNotification(title, options);   
  }).catch(function(err) {
    console.log(':^(', err);
  });
