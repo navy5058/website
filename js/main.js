@@ -32,7 +32,7 @@ function displayNotification() {
             icon: 'images/xmark.png'},
         ]
       };
-      reg.showNotification('À¥¾Û Çª½Ã Å×½ºÆ®!', options);
+      reg.showNotification('À¥¾Û Çª½Ã Å×½ºÆ®!!', options);
     });
   }
 }
