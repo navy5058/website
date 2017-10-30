@@ -1,4 +1,4 @@
-Notification.requestPermission(function(status) {
+ï»¿Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
 
@@ -17,7 +17,7 @@ function displayNotification() {
   if (Notification.permission == 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
       var options = {
-        body: 'À¥¾Û Çª½Ã Å×½ºÆ® ÁßÀÔ´Ï´Ù.!',
+        body: 'ì›¹ì•± í‘¸ì‹œ í…ŒìŠ¤íŠ¸ ì¤‘ìž…ë‹ˆë‹¤.!',
         icon: 'images/example.png',
         vibrate: [100, 50, 100],
 		lang: 'UTF-8',
@@ -32,7 +32,7 @@ function displayNotification() {
             icon: 'images/xmark.png'},
         ]
       };
-      reg.showNotification('À¥¾Û Çª½Ã Å×½ºÆ®!!', options);
+      reg.showNotification('ì›¹ì•± í‘¸ì‹œ í…ŒìŠ¤íŠ¸!!!', options);
     });
   }
 }
