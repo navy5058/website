@@ -3,6 +3,12 @@ if ('serviceWorker' in navigator) {
  navigator.serviceWorker.register('sw.js').then(function(reg) {
    console.log(':^)', reg);
    // TODO
+   
+	var title = 'Simple Title';
+	var options = {
+	  body: 'Simple piece of body text.\nSecond line of body text :)'
+	};
+	registration.showNotification(title, options);   
  }).catch(function(err) {
    console.log(':^(', err);
  });
