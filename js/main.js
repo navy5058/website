@@ -17,7 +17,7 @@ function displayNotification() {
   if (Notification.permission == 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
       var options = {
-        body: 'Here is a notification body!',
+        body: 'À¥¾Û Çª½Ã Å×½ºÆ® ÁßÀÔ´Ï´Ù.!',
         icon: 'images/example.png',
         vibrate: [100, 50, 100],
         data: {
@@ -31,7 +31,7 @@ function displayNotification() {
             icon: 'images/xmark.png'},
         ]
       };
-      reg.showNotification('Hello world!', options);
+      reg.showNotification('À¥¾Û Çª½Ã Å×½ºÆ®!', options);
     });
   }
 }
