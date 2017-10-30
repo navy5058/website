@@ -20,6 +20,7 @@ function displayNotification() {
         body: '웹앱 푸시 테스트 중입니다.!',
         icon: 'images/example.png',
         vibrate: [100, 50, 100],
+		lang: 'UTF-8',
         data: {
           dateOfArrival: Date.now(),
           primaryKey: 1
